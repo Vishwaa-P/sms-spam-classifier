@@ -11,6 +11,16 @@ This project is an Email/SMS Spam Classifier built using Machine Learning. It ut
 - **Persistent Model:** Uses pre-trained `model.pkl` and `vectorizer.pkl` files for fast prediction without retraining.
 - **Web Interface:** Built using Streamlit for easy user interaction.
 
+## Important Note About Model Files
+
+> **Note:**  
+> The files `model.pkl` (trained Multinomial Naive Bayes model) and `vectorizer.pkl` (fitted TF-IDF object) are NOT included in this repository due to their large size.  
+>
+> If you wish to use or retrain the model:
+> - You can train your own classifier using the [Kaggle SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) and the scripts provided in this repository.
+> - Once you have trained your model and vectorizer, save them as `model.pkl` and `vectorizer.pkl` in the root directory.
+> - Alternatively, contact the project maintainer for pre-trained files, if available.
+
 ## Installation Instructions
 
 ### Prerequisites
@@ -38,9 +48,9 @@ This project is an Email/SMS Spam Classifier built using Machine Learning. It ut
     nltk.download('stopwords')
     ```
 
-4. **Ensure the following trained files are present in the root directory:**
-    - `model.pkl` (the trained Multinomial Naive Bayes model)
-    - `vectorizer.pkl` (the fitted TF-IDF object)
+4. **Place your trained model files in the root directory**
+    - `model.pkl`
+    - `vectorizer.pkl`
 
 ## Usage Instructions
 
